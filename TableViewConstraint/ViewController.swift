@@ -8,21 +8,16 @@
 import UIKit
 
 class ViewController: UIViewController {
-    
-    @IBOutlet weak var redView: UIView!
-    
-    @IBOutlet weak var changeToYellowView: UIButton!
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        print(#function)
         
-        changeToYellowView(changeToYellowView)
         
     }
 
-    @IBAction func changeToYellowView(_ sender: Any) {
-        redView.backgroundColor = .yellow
-    }
+
     
 }
 

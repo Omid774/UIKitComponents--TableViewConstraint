@@ -16,39 +16,20 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Uqa-XA-tYD">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="xX4-CE-su8">
                                 <rect key="frame" x="0.0" y="59" width="393" height="759"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Wc-MS-qzo">
-                                        <rect key="frame" x="159" y="360" width="75" height="39"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="Button"/>
-                                        <connections>
-                                            <action selector="changeToYellowView:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pkH-WM-9WH"/>
-                                        </connections>
-                                    </button>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="banana" translatesAutoresizingMaskIntoConstraints="NO" id="bBo-tH-27V">
-                                        <rect key="frame" x="76" y="180" width="240" height="128"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    </imageView>
-                                </subviews>
-                                <color key="backgroundColor" systemColor="systemPinkColor"/>
-                            </view>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="Uqa-XA-tYD" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="IAY-uV-JDD"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Uqa-XA-tYD" secondAttribute="trailing" id="Ic4-Vb-YYH"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Uqa-XA-tYD" secondAttribute="bottom" id="Q44-1A-yc8"/>
-                            <constraint firstItem="Uqa-XA-tYD" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="RBm-uY-Pjm"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="xX4-CE-su8" secondAttribute="bottom" id="Cfo-wm-fXe"/>
+                            <constraint firstItem="xX4-CE-su8" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="CjT-2D-G7Y"/>
+                            <constraint firstItem="xX4-CE-su8" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="hkP-9g-cxe"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="xX4-CE-su8" secondAttribute="trailing" id="qof-CE-uef"/>
                         </constraints>
                     </view>
-                    <connections>
-                        <outlet property="changeToYellowView" destination="1Wc-MS-qzo" id="yfT-5D-tBn"/>
-                        <outlet property="redView" destination="Uqa-XA-tYD" id="zyn-yc-rVq"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -56,12 +37,8 @@
         </scene>
     </scenes>
     <resources>
-        <image name="banana" width="440" height="400"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="systemPinkColor">
-            <color red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
